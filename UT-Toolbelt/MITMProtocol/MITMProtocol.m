@@ -132,4 +132,14 @@ static BOOL (^shouldInitWithRequest) (NSURLRequest *request)  = nil;
     }
 }
 
++ (void)startMocking
+{
+    [NSURLProtocol registerClass:[self class]];
+}
+
++ (void)stopMocking
+{
+    [NSURLProtocol unregisterClass:[self class]];
+}
+
 @end

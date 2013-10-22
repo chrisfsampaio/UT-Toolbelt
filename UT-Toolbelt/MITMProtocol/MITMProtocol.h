@@ -24,5 +24,7 @@
 + (void)setSupportedSchemes:(NSArray*)schemes;
 + (void)setSupportedBaseURL:(NSURL*)baseURL;
 + (void)setResponseDelay:(CGFloat)responseDelay;
++ (void)startMocking;
++ (void)stopMocking;
 
 @end

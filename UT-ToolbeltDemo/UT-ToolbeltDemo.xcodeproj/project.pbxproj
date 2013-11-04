@@ -21,6 +21,7 @@
 		AA060BF5181615EF0063AB28 /* UT_ToolbeltDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA060BF4181615EF0063AB28 /* UT_ToolbeltDemoTests.m */; };
 		AA060C1018161A1E0063AB28 /* MITMProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = AA060C0B18161A1E0063AB28 /* MITMProtocol.m */; };
 		AA060C1118161A1E0063AB28 /* XCTestCase+AsynchronousTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA060C0E18161A1E0063AB28 /* XCTestCase+AsynchronousTests.m */; };
+		AA9CC03B18283523005584AB /* XCTestCase+CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9CC03A18283523005584AB /* XCTestCase+CoreData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		AA060C0D18161A1E0063AB28 /* XCTestCase+AsynchronousTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCTestCase+AsynchronousTests.h"; sourceTree = "<group>"; };
 		AA060C0E18161A1E0063AB28 /* XCTestCase+AsynchronousTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCTestCase+AsynchronousTests.m"; sourceTree = "<group>"; };
 		AA060C0F18161A1E0063AB28 /* UT-Toolbelt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UT-Toolbelt.h"; sourceTree = "<group>"; };
+		AA9CC03918283523005584AB /* XCTestCase+CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "XCTestCase+CoreData.h"; path = "TestCase-CoreData/XCTestCase+CoreData.h"; sourceTree = "<group>"; };
+		AA9CC03A18283523005584AB /* XCTestCase+CoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "XCTestCase+CoreData.m"; path = "TestCase-CoreData/XCTestCase+CoreData.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,7 @@
 		AA060C0818161A1E0063AB28 /* UT-Toolbelt */ = {
 			isa = PBXGroup;
 			children = (
+				AA9CC038182834BB005584AB /* TestCase-CoreData */,
 				AA060C0918161A1E0063AB28 /* MITMProtocol */,
 				AA060C0C18161A1E0063AB28 /* TestCase-AsynchronousTests */,
 				AA060C0F18161A1E0063AB28 /* UT-Toolbelt.h */,
@@ -179,6 +183,15 @@
 				AA060C0E18161A1E0063AB28 /* XCTestCase+AsynchronousTests.m */,
 			);
 			path = "TestCase-AsynchronousTests";
+			sourceTree = "<group>";
+		};
+		AA9CC038182834BB005584AB /* TestCase-CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				AA9CC03918283523005584AB /* XCTestCase+CoreData.h */,
+				AA9CC03A18283523005584AB /* XCTestCase+CoreData.m */,
+			);
+			name = "TestCase-CoreData";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA060C1018161A1E0063AB28 /* MITMProtocol.m in Sources */,
+				AA9CC03B18283523005584AB /* XCTestCase+CoreData.m in Sources */,
 				AA060BF5181615EF0063AB28 /* UT_ToolbeltDemoTests.m in Sources */,
 				AA060C1118161A1E0063AB28 /* XCTestCase+AsynchronousTests.m in Sources */,
 			);
@@ -480,6 +494,7 @@
 				AA060BFA181615EF0063AB28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA060BFB181615EF0063AB28 /* Build configuration list for PBXNativeTarget "UT-ToolbeltDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +503,7 @@
 				AA060BFD181615EF0063AB28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
